@@ -1,7 +1,7 @@
 import React from "react";
 import HeroImage from "../Assets/hero_image.png";
-import HeroText from "../components/home/HeroText";
-import Content from "../components/Content";
+import HeroText from "./HeroText";
+import Content from "./Content";
 
 import Image1 from "../Assets/image_1.png";
 import Image2 from "../Assets/image_2.png";
