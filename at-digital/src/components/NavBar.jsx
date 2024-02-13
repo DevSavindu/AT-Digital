@@ -1,21 +1,22 @@
-import React,{useState} from 'react'
-import Logo from "./Asserts/Logo.svg"
+import React, { useState } from 'react';
+import Logo from "./Asserts/Logo.png";
 
 const NavBar = () => {
-    const [isSelected, setIsSelected] = useState(false);
+  const [isSelected, setIsSelected] = useState(false);
 
   const handleSelection = () => {
     setIsSelected(!isSelected);
     console.log(isSelected);
   };
+
   return (
-    <header>
+    <div>
       <nav className="bg-primary-color border-gray-200 px-4 lg:px-6 py-2.5 h-[77px] flex flex-col justify-center relative">
         <div className="flex items-center justify-between lg:mx-14 md:mx-9 sm:mx-4">
-          <a className="flex items-center">
+          <a className="flex items-center"> {/* className instead of classNameName */}
             <img
               src={Logo}
-              classNameName="mr-3 w-[238.89px] bg-green-500"
+              className="mr-3 w-[238.89px] bg-green-500" 
               alt=""
             />
           </a>
@@ -88,8 +89,8 @@ const NavBar = () => {
           </div>
         </div>
       </nav>
-    </header>
-  )
-}
+    </div>
+  );
+};
 
-export default NavBar
+export default NavBar;
