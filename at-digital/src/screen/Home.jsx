@@ -1,10 +1,10 @@
 import React from "react";
-import HeroImage from "../Asserts/hero_image.png";
-import HeroText from "../Hero/HeroText";
-import Content from "../Content";
+import HeroImage from "../Assets/hero_image.png";
+import HeroText from "../components/home/HeroText";
+import Content from "../components/Content";
 
-import Image1 from "../Asserts/image_1.png";
-import Image2 from "../Asserts/image_2.png";
+import Image1 from "../Assets/image_1.png";
+import Image2 from "../Assets/image_2.png";
 
 const Home = () => {
   return (

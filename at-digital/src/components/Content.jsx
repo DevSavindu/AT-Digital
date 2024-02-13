@@ -1,7 +1,7 @@
 import React from "react";
 import CustomButton from "./CustomButton";
 
-const Content = ({ reverse = false, imageSrc, title, description }) => {
+const Content = ({ reverse = false, imageSrc, title, desciption }) => {
   return (
     <div
       className={
@@ -12,13 +12,12 @@ const Content = ({ reverse = false, imageSrc, title, description }) => {
       <img
         src={imageSrc}
         className="xl:w-[414px] xl:h-[414px] lg:w-[346px] lg:h-[346px] w-[275px] h-[275px]"
-        alt="" // Add alt prop here
       />
       <div className="md:w-[542px]">
         <p className="text-primary-color text-[27px] font-semibold md:text-left text-center">
           {title}
         </p>
-        <p className="py-5 text-base text-center md:text-left">{description}</p> {/* Corrected 'desciption' to 'description' */}
+        <p className="py-5 text-base text-center md:text-left">{desciption}</p>
         <div className="flex justify-center md:justify-start">
           <CustomButton text="Learn More" />
         </div>
